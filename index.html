@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="calculator">
+    <section class="theme-section">
+      <div class="name">calc</div>
+      <div class="theme-btn">
+        <span class="cal-theme">theme</span>
+        <div class="theme-switch-container">
+          <div class="theme-numbers">
+            <span data-theme="theme1">1</span>
+            <span data-theme="theme2">2</span>
+            <span data-theme="theme3">3</span>
+          </div>
+          <div class="toggle-switch">
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <input type="text" id="result" class="result-section" readonly>
+    <section class="btns-section">
+      <button class="number">7</button>
+      <button class="number">8</button>
+      <button class="number">9</button>
+      <button class="clear">del</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="number">6</button>
+      <button class="operator">+</button>
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="operator">-</button>
+      <button class="decimal">.</button>
+      <button class="number">0</button>
+      <button class="operator">/</button>
+      <button class="operator">*</button>
+      <button class="reset">reset</button>
+      <button class="equal">=</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

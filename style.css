@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: hsl(222, 26%, 31%);
+    --toggle-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+
+    --key-background: hsl(225, 21%, 49%);
+    --key-shadow: hsl(224, 28%, 35%);
+
+    --key-background-2: hsl(6, 63%, 50%);
+    --key-shadow-2: hsl(6, 70%, 34%);
+
+    --key-background-3: hsl(30, 25%, 89%);
+    --key-shadow-3: hsl(28, 16%, 65%);
+
+    --key-color: hsl(0, 0%, 100%);
+    --result-color: hsl(0, 0%, 100%);
+    --key-color-2: hsl(0, 0%, 100%);
+    --key-color-3: hsl(221, 14%, 31%);
+
+    --hover-color: hsla(224, 45%, 55%, 0.767);
+    --hover-color-2: hsl(6, 85%, 64%);
+    --hover-color-3: hsl(0, 0%, 100%);
+
+    --box-shadow: rgba(255, 254, 254, 0.63);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--result-color);
+    font-family: "League Spartan", serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.theme1 {
+    --bg-color: hsl(222, 26%, 31%);
+    --toggle-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+
+    --key-background: hsl(225, 21%, 49%);
+    --key-shadow: hsl(224, 28%, 35%);
+
+    --key-background-2: hsl(6, 63%, 50%);
+    --key-shadow-2: hsl(6, 70%, 34%);
+
+    --key-background-3: hsl(30, 25%, 89%);
+    --key-shadow-3: hsl(28, 16%, 65%);
+
+    --key-color: hsl(0, 0%, 100%);
+    --result-color: hsl(0, 0%, 100%);
+    --key-color-2: hsl(0, 0%, 100%);
+    --key-color-3: hsl(221, 14%, 31%);
+
+    --hover-color: hsla(224, 45%, 55%, 0.767);
+    --hover-color-2: hsl(6, 85%, 64%);
+    --hover-color-3: hsl(0, 0%, 100%);
+
+    --box-shadow: rgba(255, 254, 254, 0.63);
+}
+
+body.theme2 {
+    --bg-color: hsl(0, 0%, 90%);
+    --toggle-background: hsl(0, 5%, 81%);
+    --screen-background: hsl(0, 0%, 93%);
+
+    --key-background: hsl(185, 42%, 37%);
+    --key-shadow: hsl(185, 58%, 25%);
+
+    --key-background-2: hsl(25, 98%, 40%);
+    --key-shadow-2: hsl(25, 99%, 27%);
+
+    --key-background-3: hsl(45, 7%, 89%);
+    --key-shadow-3: hsl(35, 11%, 61%);
+
+    --key-color: hsl(0, 0%, 100%);
+    --key-color-2: hsl(0, 0%, 100%);
+    --result-color: hsl(60, 10%, 19%);
+    --key-color-3: hsl(60, 10%, 19%);
+
+    --hover-color: hsl(185, 43%, 58%);
+    --hover-color-2: hsl(25, 98%, 40%);
+    --hover-color-3: hsl(0, 0%, 93%);
+
+    --box-shadow: rgba(0, 0, 0, 0.521);
+}
+
+body.theme3 {
+    --bg-color: hsl(268, 75%, 9%);
+    --toggle-background: hsl(268, 71%, 12%);
+    --screen-background: hsl(268, 71%, 12%);
+
+    --key-background: hsl(281, 89%, 26%);
+    --key-shadow: hsl(285, 91%, 52%);
+
+    --key-background-2: hsl(176, 100%, 44%);
+    --key-shadow-2: hsl(177, 92%, 70%);
+
+    --key-background-3: hsl(268, 47%, 21%);
+    --key-shadow-3: hsl(290, 70%, 36%);
+
+    --key-color: hsl(221, 14%, 31%);
+    --result-color: hsl(52, 100%, 62%);
+    --key-color-2: hsl(0, 0%, 100%);
+    --key-color-3: hsl(52, 100%, 62%);
+
+    --hover-color: hsl(285, 91%, 52%);
+    --hover-color-2: hsl(177, 92%, 70%);
+    --hover-color-3: hsl(281, 74%, 36%);
+
+    --box-shadow: rgba(255, 254, 254, 0.63);
+}
+
+.calculator {
+    display: flex;
+    max-width: fit-content;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btns-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--toggle-background);
+    margin-top: 10px;
+}
+
+.btns-section button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--key-background-3);
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--key-color-3);
+    box-shadow: 0 3px 0px var(--key-shadow-3);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in;
+}
+
+.btns-section button:hover {
+    background-color: var(--hover-color-3);
+
+}
+
+.result-section {
+    padding: 30px 20px;
+    background-color: var(--screen-background);
+    color: var(--result-color);
+    text-align: right;
+    outline: none;
+    border: none;
+    font-size: 40px;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px var(--box-shadow) inset;
+}
+
+.click {
+    animation: click 0.3s linear;
+}
+
+@keyframes click {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.95);
+    }
+}
+
+.reset {
+    grid-area: 5/1/6/3;
+    background-color: var(--key-background) !important;
+    color: var(--key-color-2) !important;
+    box-shadow: 0 3px 0 var(--key-shadow) !important;
+    font-size: 25px !important;
+}
+
+.reset:hover {
+    background-color: var(--hover-color) !important;
+}
+
+.clear:hover {
+    background-color: var(--hover-color) !important;
+}
+
+.clear {
+    background-color: var(--key-background) !important;
+    color: var(--key-color-2) !important;
+    box-shadow: 0 3px 0 var(--key-shadow) !important;
+    font-size: 25px !important;
+}
+
+.equal {
+    grid-area: 5/3/6/5;
+    background-color: var(--key-background-2) !important;
+    color: var(--key-color) !important;
+    box-shadow: 0 3px 0 var(--key-shadow-2) !important;
+}
+
+.equal:hover {
+    background-color: var(--hover-color-2) !important;
+}
+
+.theme-switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transform: translateY(-12px);
+}
+
+.theme-numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    color: var(--result-color);
+}
+
+.theme-numbers span {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cal-theme {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.name {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 70px;
+    height: 23px;
+    background-color: var(--toggle-background);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.toggle-ball {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: var(--key-background-2);
+    border-radius: 50%;
+    transition: left 0.3s;
+    cursor: pointer;
+}
+
+.theme-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 20px;
+    }
+}
