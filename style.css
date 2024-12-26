@@ -290,5 +290,9 @@ body.theme3 {
 @media (max-width: 650px) {
     body {
         padding: 20px;
+        align-items: start;
+    }
+    .calculator{
+        margin-top: 80px;
     }
 }

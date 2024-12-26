@@ -8,8 +8,8 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
-- Solution URL: [here](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-solution-XLeRWZUZ7l)
-- Live Site URL: [here](https://sunilbaghel002.github.io/newsletter-sign-up-with-success-message-main/)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/calculator-app-solution-P8FZDUGDDC)
+- Live Site URL: [here](https://sunilbaghel002.github.io/calculator-app-solution/)
 
 ## My process
 
